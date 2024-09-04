@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB-RETAILERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div style="background-color: #f6f6f6;" class="body-col">
+     <!-- delivery instruction -->
+ <section id="quikctech-d-info">
+    <ul class="quikctech-dinfo-flex text-center m-auto">
+        <li><i class="fa-solid fa-box"></i> Free 60-day returns on full-price orders</li>
+        <li class="quicktech-none"><i class="fa-solid fa-check"></i> In-store pick up and returns eligble for all orders</li>
+        <li class="quicktech-none"><i class="fa-solid fa-check"></i> 100% secure payment</li>
+    </ul>
+</section>
+<!-- delivery instruction -->
+ <!-- checkout head -->
+    <section id="checkout-head">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-3">
+                    <div class="checkout-logo">
+                        <img src="images/logo-black.svg" alt="Logo">
+                      </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="checkout-steps">
+                        <div class="step">
+                          <div class="step-circle active">1</div>
+                          <div class="step-label">Shipping</div>
+                        </div>
+                        <div class="step quicktech-step-line">
+                          <div class="step-circle">2</div>
+                          <div class="step-label">Review &amp Pay</div>
+                        </div>
+                        <div class="step">
+                          <div class="step-circle">3</div>
+                          <div class="step-label">Order Confirmation</div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="secure-checkout">
+                        <span class="lock-icon">🔒</span> Secure checkout
+                      </div>
+                </div>
+                <!-- <div class="col-lg-12 m-auto">
+                    <div class="checkout-header">
+                        <div class="checkout-logo">
+                          <img src="images/logo-black.svg" alt="Logo">
+                        </div>
+                    
+                        <div class="checkout-steps">
+                          <div class="step">
+                            <div class="step-circle active">1</div>
+                            <div class="step-label">Shipping</div>
+                          </div>
+                          <div class="step quicktech-step-line">
+                            <div class="step-circle">2</div>
+                            <div class="step-label">Review &amp Pay</div>
+                          </div>
+                          <div class="step">
+                            <div class="step-circle">3</div>
+                            <div class="step-label">Order Confirmation</div>
+                          </div>
+                        </div>
+                    
+                        <div class="secure-checkout">
+                          <span class="lock-icon">🔒</span> Secure checkout
+                        </div>
+                      </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+ <!-- chexkout head -->
+  <!-- checkout main -->
+  <div class="container mt-5">
+    <div class="row">
+        <!-- Left Column: Shipping Form and Delivery Options -->
+         <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <!-- Choose delivery method -->
+            <div class="shipping-section">
+                <h5>Choose delivery method</h5>
+                <div class="row mt-3">
+                    <div class="col-12">
+                      <div class="quicktech-delivery-meth">
+                        <div class="custom-card" id="homeDelivery" onclick="selectDelivery('home')">
+                            <p style="font-size: 14px;"><strong><i class="fa-solid fa-house"></i> Home or work address</strong></p>
+                            <p>1 - 2 days</p>
+                            <p style="text-align: end; margin-top:-22px;" class="text-success">FREE</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="custom-card" id="storePickup" onclick="selectDelivery('store')">
+                            <p style="font-size: 14px;"><strong><i class="fa-solid fa-store"></i> Store pickup</strong></p>
+                            <p>1 - 2 days</p>
+                            <p style="text-align: end; margin-top:-22px;" class="text-success">FREE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shipping address -->
+            <div class="shipping-section">
+                <h5>Shipping address <span class="text-danger">*</span></h5>
+                <div class="row g-3 mt-2">
+                    <div class="col-12">
+                        <!-- <label class="form-label">First name<span class="text-danger">*</span></label> -->
+                        <input type="text" class="form-control quikctech-form" placeholder="First name">
+                    </div>
+                    <div class="col-12">
+                        <!-- <label class="form-label">Last name<span class="text-danger">*</span></label> -->
+                        <input type="text" class="form-control quikctech-form" placeholder="Last name">
+                    </div>
+                    <div class="col-12">
+                        <!-- <label class="form-label">Phone number<span class="text-danger">*</span></label> -->
+                        <div class="phone-input">
+                            <select class="form-select form-control-country" id="countryCode">
+                                <option value="+353">+353</option>
+                                <option value="+1">+1</option>
+                                <option value="+44">+44</option>
+                                <option value="+91">+91</option>
+                            </select>
+                            <input type="text" class="form-control quikctech-form" placeholder="Phone number">
+                        </div>
+                        <div class="invalid-feedback">Only numbers allowed</div>
+                    </div>
+                    <div class="col-12">
+                        <!-- <label class="form-label">Postal code<span class="text-danger">*</span></label> -->
+                        <input type="text" class="form-control quikctech-form" placeholder="Postal code">
+                    </div>
+                    <div class="col-12">
+                        <!-- <label class="form-label">House number</label> -->
+                        <input type="text" class="form-control quikctech-form" placeholder="House Number">
+                    </div>
+                    <div class="col-12">
+                        <!-- <label class="form-label">Street</label> -->
+                        <input type="text" class="form-control quikctech-form" placeholder="Street">
+                    </div>
+                    <div class="col-12">
+                        <!-- <label class="form-label">City</label> -->
+                        <input type="text" class="form-control quikctech-form" placeholder="City">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" checked>
+                            <label class="form-check-label">
+                                This is also my billing address
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shipping options -->
+            <div class="shipping-section">
+                <h5>Shipping options</h5>
+                <div class="row shipping-options">
+                    <div class="col-12">
+                        <div class="custom-card" id="dhlStandard" onclick="selectShipping('standard')">
+                            <p style="font-size: 14px;"><strong><i class="fa-solid fa-truck"></i> DHL Evening (18:00-22:00)</strong></p>
+                            <p>1 - 2 days</p>
+                            <p style="text-align: end; margin-top:-22px;" class="text-success">FREE</p>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="custom-card" id="dhlEvening" onclick="selectShipping('evening')">
+                            <p style="font-size: 14px;"><strong><i class="fa-solid fa-truck"></i> DHL Standard</strong></p>
+                            <p>1 - 2 days</p>
+                            <p style="text-align: end; margin-top:-22px;" class="text-success">FREE</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button class="btn-review">Review &amp Pay</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Sidebar with Images and Items -->
+        <div class="col-md-4">
+            <div class="sidebarr">
+                <div class="quikctech-items">
+                    <h6>2 Items</h6>
+                    <a href="#">Edit</a>
+                </div>
+                <div class="item-info mt-3">
+                    <img src="images/checkout.avif" alt="Product Image">
+                    <div class="item-details">
+                        <p><strong>Premium Core Zip Thru Hoodie</strong></p>
+                        <p class="text-small">Sweats / dark black, Size: M</p>
+                        <p class="text-end price">€99,95</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="item-info">
+                    <img src="images/checkout.avif" alt="Product Image">
+                    <div class="item-details">
+                        <p><strong>3D Cargo Straight Tapered Pant</strong></p>
+                        <p class="text-small">O 5 pockets / dark bronze green, Size: W32 L30</p>
+                        <p class="text-end price">€49,97</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <span class="subtotal">Subtotal</span>
+                    <span class="price">€149,92</span>
+                </div>
+                <div class="d-flex justify-content-between text-success">
+                    <span class="total">Shipping</span>
+                    <span class="price">FREE</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span class="total">Total Incl. VAT</span>
+                    <span class="price">€149,92</span>
+                </div>
+                <hr>
+                <div>
+                    <label class="form-label quicktech-voucharr">Do you have a voucher code or gift card?</label>
+                    <div class="d-flex">
+                        <input style="border-radius: 0;" type="text" class="form-control w-100 me-3" placeholder="Enter voucher code">
+                        <button class="quickteck-app-btnn">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+
+  <!-- checkout-main -->
+   
+<!-- footer -->
+<footer id="quicktech-footer">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="quicktech-copyright text-center">
+                    <p>Copyright © 2024 G-STAR
+                        All rights reserved
+                        Design and Developed By <a href="https://quicktech-ltd.com/">QuickTech IT</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!-- footer --> 
+    <!-- <div class="feedback-button">Feedback</div> -->
+</div>
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    
+        function selectSize(element, type) {
+            var options = document.querySelectorAll('#' + type + 'Sizes .size-box');
+            options.forEach(function (el) {
+                el.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+    </script>
+
+<script>
+    function selectDelivery(type) {
+        document.getElementById('homeDelivery').classList.remove('selected');
+        document.getElementById('storePickup').classList.remove('selected');
+    
+        if (type === 'home') {
+            document.getElementById('homeDelivery').classList.add('selected');
+        } else {
+            document.getElementById('storePickup').classList.add('selected');
+        }
+    }
+    
+    function selectShipping(type) {
+        document.getElementById('dhlStandard').classList.remove('selected');
+        document.getElementById('dhlEvening').classList.remove('selected');
+    
+        if (type === 'standard') {
+            document.getElementById('dhlStandard').classList.add('selected');
+        } else {
+            document.getElementById('dhlEvening').classList.add('selected');
+        }
+    }
+
+</script>
+
+    <script>
+        // Handle sidebar toggle for smaller screens
+        document.getElementById('sidebarToggle').addEventListener('click', function () {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('collapsed');
+        });
+
+        // Collapse sidebar by default on smaller screens
+        function handleResize() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+            if (window.innerWidth < 992) { // Bootstrap's breakpoint for large devices
+                sidebar.classList.add('collapsed');
+                mainContent.classList.add('collapsed');
+            } else {
+                sidebar.classList.remove('collapsed');
+                mainContent.classList.remove('collapsed');
+            }
+        }
+
+        // Run on load
+        window.addEventListener('load', handleResize);
+
+        // Run on window resize
+        window.addEventListener('resize', handleResize);
+    </script>
+</body>
+</html>

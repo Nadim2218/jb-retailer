@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB-RETAILERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <nav id="quicketch-navbar">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-1">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <button class="btn btn-light me-2" id="sidebarToggle">☰</button>
+                      </button>
+                      <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                         
+                          </div> -->
+                     
+              </div>
+              <div class="col-lg-3">
+                  <div class="quikcetch-categories">
+                      <ul class="quicktech-categories">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="categories.html">MEN</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="categories.html">WOMEN</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-2">
+                  <div class="quicktech-logo d-flex">
+                      <a class="navbar-brand mx-auto" href="index.html">
+                          <span class="navbar-logo">JB-RETAILERS</span>
+                      </a>
+                    
+                    
+                  </div>
+              </div>
+              <div class="col-lg-2">
+                  <form class="quicktech-logos" role="search">
+                      <input class="form-control inn me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="quicktech-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+              </div>
+              <div class="col-lg-4">
+                  <div class="quicktech-nav-right">
+                      <ul class="navbar-brand quicktech-side-right">
+                          <div class="dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img class="quicktech-language" src="https://www.g-star.com/_fes/20240809162459302/img/flags@2x/nl.png" alt="flag"> en
+                              </a>
+                              <ul style="left: 29px;" class="dropdown-menu" aria-labelledby="languageDropdown">
+                                  <li class="px-3 py-2">
+                                      <h5>Choose your shipping destination and language</h5>
+                                      <form>
+                                          <div class="mb-3">
+                                              <label for="countrySelect" class="form-label">Country</label>
+                                              <select class="form-select" id="countrySelect">
+                                                  <option selected>Netherlands</option>
+                                                  <option value="1">Germany</option>
+                                                  <option value="2">France</option>
+                                                  <option value="3">United Kingdom</option>
+                                                  <!-- Add more countries as needed -->
+                                              </select>
+                                          </div>
+                                          <div class="mb-3">
+                                              <label for="languageSelect" class="form-label">Language</label>
+                                              <select class="form-select" id="languageSelect">
+                                                  <option selected>English</option>
+                                                  <option value="1">Dutch</option>
+                                                  <option value="2">German</option>
+                                                  <option value="3">French</option>
+                                                  <!-- Add more languages as needed -->
+                                              </select>
+                                          </div>
+                                          <button type="submit" class="btn btn-dark">Continue</button>
+                                      </form>
+                                      <p class="mt-3 text-muted">Your bag will be emptied when you change your country settings</p>
+                                  </li>
+                              </ul>
+                          </div>
+                          <li>
+                              <a class="nav-link" href="login.html"><i style="font-size: 15px;" class="fa-regular fa-user"></i> login</a>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+  
+
+    <!-- Sidebar -->
+    <nav class="sidebar d-none d-lg-block" id="sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a style="color: tomato;" class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#sale" role="button" aria-expanded="false" aria-controls="sale">
+                    Sale
+                    <i class="bi bi-plus-circle" id="sale-icon"></i>
+                </a>
+                <ul class="collapse list-unstyled quicktech-sidebarr" id="sale">
+                    <li><a class="nav-link" href="#">Item 1</a></li>
+                    <li><a class="nav-link" href="#">Item 2</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#men" role="button" aria-expanded="false" aria-controls="men">
+                    Men
+                    <i class="bi bi-plus-circle" id="men-icon"></i>
+                </a>
+                <ul class="collapse list-unstyled quicktech-sidebarr" id="men">
+                    <li><a class="nav-link" href="#">Item 1</a></li>
+                    <li><a class="nav-link" href="#">Item 2</a></li>
+                </ul>
+            </li>
+            <!-- Other items... -->
+        </ul>
+    </nav>
+
+<!-- mobile-navigationbar -->
+<nav class="navbar navbar-expand-lg bg-light quikctech-nn">
+    <div class="container">
+        <div style="width: 100%;" class="row">
+            <div class="col-3 col-sm-2">
+             <div class="quicktech-s-flex d-flex">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i style="color: white;" class="fa-solid fa-bars"></i>
+                  </button>
+                  <div class="search-container text-center">
+                    <!-- Magnifying glass icon that toggles collapse -->
+                    <a class="quikctech-search-icon" data-bs-toggle="collapse" href="#searchInput" role="button" aria-expanded="false" aria-controls="searchInput">
+                      <i style="color: white; padding-top:12px;" class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                
+                  
+             </div>
+            </div>
+            
+            </div>
+            <div style="padding-top: 5px;" class="col-6 text-end">
+              <a href="index.html">  <span style="color: white; padding-top:5px;" class="navbar-logos">JB-RETAILERS</span></a>
+            </div>
+            <div style="padding-top: 5px;" class="col-3">
+                <div class="quicktech-right-mob text-end">
+                    <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+          <!-- Collapsible input field -->
+          <div class="collapse mt-2 quicktech-search" id="searchInput">
+            <input type="text" class="form-control" placeholder="Search...">
+            <div class="quicktech-search-btnnn">
+                <i style="color: black;" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        
+       
+    
+     
+    </div>
+  </nav>
+
+  <!--mobile sidebar -->
+ <div class="quikctech-mobile-sidebar">
+      <div class="offcanvas offcanvas-start quic" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <a href="index.html"><span style="color: black; padding-top:5px;" class="navbar-logos">JB-RETAILERS</span></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a style="color: tomato;" class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#salee" role="button" aria-expanded="false" aria-controls="salee">
+                        Sale
+                        <i class="bi bi-plus-circle" id="sale-iconn"></i>
+                    </a>
+                    <ul class="collapse list-unstyled quicktech-sidebarr" id="salee">
+                        <li><a class="nav-link" href="#">Item 1</a></li>
+                        <li><a class="nav-link" href="#">Item 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#menn" role="button" aria-expanded="false" aria-controls="menn">
+                        Men
+                        <i class="bi bi-plus-circle" id="men-iconn"></i>
+                    </a>
+                    <ul class="collapse list-unstyled quicktech-sidebarr" id="menn">
+                        <li><a class="nav-link" href="#">Item 1</a></li>
+                        <li><a class="nav-link" href="#">Item 2</a></li>
+                    </ul>
+                </li>
+                <!-- Other items... -->
+            </ul>
+        </div>
+      </div>
+ </div>
+<!-- sidebar -->
+<!-- mobile-navigation bar -->
+
+
+    <!-- Main content -->
+    <div class="main-content" id="mainContent">
+      
+<!-- explore details -->
+<section id="quicktech-exploredetails">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="quicktech-explore-content mt-5">
+                    <p>13 August 2024
+                        <br>
+                        <span>Responsibility</span>
+                    </p>
+                    <h4>A Greener Future</h4>
+                    <br>
+                    <br>
+                    <h3>Organic cotton supports the health of our planet and the wellbeing of the people who grow it. That’s why we have been a proud contributor of the Organic Cotton Accelerator (OCA) since 2021, supporting farmers in their transition from conventional to organic cotton. Learn more about why it’s important and explore our capsule of organic cotton tees.</h3>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="quicktech-expdt-img mt-5">
+                    <img src="images/exdet.webp" class="w-100" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="quicktech-expdt-slider">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/expdt1.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/expdt3.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/expdt2.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <div class="quicktech-slider-details">
+                    <h4>Farmers First </h4>
+                    <p>Organic cotton farming works without harmful pesticides and fertilizers. Instead, it uses natural methods that keep the soil healthy and preserve biodiversity. But that’s not all. Organic cotton helps improve the livelihood of the farmers who grow it. With OCA’s Farm Program, we’ve supported 125 small farmers in India in 2023. This includes sourcing organic cotton seeds, hands-on training to cultivate organic cotton efficiently, and paying farmers above market price. So they can become more financially independent, and continue to grow organic cotton.
+                    </p>
+                    <br>
+                    <br>
+                    <h4>For Everyone </h4>
+                    <p>Fewer chemicals in our water and soil mean a healthier environment for everyone. Every piece made with organic cotton supports farming methods that take care of the people who grow it and the land they live on. By choosing organic cotton products, you're contributing to a positive impact on the environment and supporting sustainable agriculture. Something that benefits both people and the planet. For us and future generations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--EXPLORE RESPONSIBLE PIECES  -->
+<section id="quicktech-youmay">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="quicktech-may-headd">
+                <h1>EXPLORE RESPONSIBLE PIECES</h1>
+            </div>
+        </div>
+        <div class="row mt-3 flex-nowrap overflow-auto">
+            <div class="col-3" style="min-width: 250px;">
+               <a href="productdetails.html">
+                <div class="quikctech-product-img">
+                    <img src="images/product.avif" class="w-100 quicktech-hover" alt="" onmouseover="this.src='images/newarrival.png'" onmouseout="this.src='images/product.avif'">
+                    <div class="quicktech-wishlist">
+                       <button> <i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="quikctech-p-info">
+                    <h6>Eve Basic Leather Sneakers</h6>
+                    <p>৳ 120 </p>
+                </div>
+               </a>
+            </div>
+            <div class="col-3" style="min-width: 250px;">
+                <a href="productdetails.html">
+                 <div class="quikctech-product-img">
+                     <img src="images/product.avif" class="w-100 quicktech-hover" alt="" onmouseover="this.src='images/newarrival.png'" onmouseout="this.src='images/product.avif'">
+                     <div class="quicktech-wishlist">
+                        <button> <i class="fa-regular fa-heart"></i></button>
+                     </div>
+                 </div>
+                 <div class="quikctech-p-info">
+                     <h6>Eve Basic Leather Sneakers</h6>
+                     <p>৳ 120 </p>
+                 </div>
+                </a>
+             </div>
+             <div class="col-3" style="min-width: 250px;">
+                <a href="productdetails.html">
+                 <div class="quikctech-product-img">
+                     <img src="images/product.avif" class="w-100 quicktech-hover" alt="" onmouseover="this.src='images/newarrival.png'" onmouseout="this.src='images/product.avif'">
+                     <div class="quicktech-wishlist">
+                        <button> <i class="fa-regular fa-heart"></i></button>
+                     </div>
+                 </div>
+                 <div class="quikctech-p-info">
+                     <h6>Eve Basic Leather Sneakers</h6>
+                     <p>৳ 120 </p>
+                 </div>
+                </a>
+             </div>
+             <div class="col-3" style="min-width: 250px;">
+                <a href="productdetails.html">
+                 <div class="quikctech-product-img">
+                     <img src="images/product.avif" class="w-100 quicktech-hover" alt="" onmouseover="this.src='images/newarrival.png'" onmouseout="this.src='images/product.avif'">
+                     <div class="quicktech-wishlist">
+                        <button> <i class="fa-regular fa-heart"></i></button>
+                     </div>
+                 </div>
+                 <div class="quikctech-p-info">
+                     <h6>Eve Basic Leather Sneakers</h6>
+                     <p>৳ 120 </p>
+                 </div>
+                </a>
+             </div>
+             <div class="col-3" style="min-width: 250px;">
+                <a href="productdetails.html">
+                 <div class="quikctech-product-img">
+                     <img src="images/product.avif" class="w-100 quicktech-hover" alt="" onmouseover="this.src='images/newarrival.png'" onmouseout="this.src='images/product.avif'">
+                     <div class="quicktech-wishlist">
+                        <button> <i class="fa-regular fa-heart"></i></button>
+                     </div>
+                 </div>
+                 <div class="quikctech-p-info">
+                     <h6>Eve Basic Leather Sneakers</h6>
+                     <p>৳ 120 </p>
+                 </div>
+                </a>
+             </div>
+        
+            
+            
+            <!-- Repeat the same structure for other items -->
+        </div>
+    </div>
+</section>
+<!-- explore details -->
+
+<!-- discover -->
+  <section id="quicktech-discover">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="quicktech-may-headd text-center">
+                    <h1>EXPLORE RESPONSIBLE PIECES</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row gapp mb-5 mt-4">
+            <div class="col-lg-4 col-sm-6">
+              <a href="exploredetails.html">
+                <div class="quicktech-dis-img">
+                    <img src="images/disco.jpeg" class="w-100" alt="">
+                    <div class="quicktech-dis-content">
+                        <h4>RESPONSIBILITY</h4>
+                        <h3>A Sustainable Certification</h3>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="exploredetails.html">
+                  <div class="quicktech-dis-img">
+                      <img src="images/disco.jpeg" class="w-100" alt="">
+                      <div class="quicktech-dis-content">
+                          <h4>RESPONSIBILITY</h4>
+                          <h3>A Sustainable Certification</h3>
+                      </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <a href="exploredetails.html">
+                  <div class="quicktech-dis-img">
+                      <img src="images/disco.jpeg" class="w-100" alt="">
+                      <div class="quicktech-dis-content">
+                          <h4>RESPONSIBILITY</h4>
+                          <h3>A Sustainable Certification</h3>
+                      </div>
+                  </div>
+                </a>
+              </div>
+        </div>
+    </div>
+  </section>
+<!-- discover -->
+
+
+
+
+<!-- footer -->
+<footer id="quicktech-footer">
+    <div class="container">
+        <div class="row gapp">
+            <div class="col-lg-4 col-sm-6">
+                <div class="quicktech-footer-main">
+                    <h4>JB-RETAILERS</h4>
+                <p><a href="#">About JB-RETAILERS</a></p>
+                <p><a href="#">Jeans Fit Guide</a></p>
+                <p><a href="#">Careers</a></p>
+                <p><a href="#">Corporate Responsibility</a></p>
+                <p><a href="#">GSRD Foundation</a></p>
+                <p><a href="#">JB-RETAILERS Rewear</a></p>
+                <p><a href="#">Certified Tailors</a></p>
+                <p><a href="#">Club-G</a></p>
+                <p><a href="#">Newsletter</a></p>
+                <p> <a href="#">Gift Cards</a></p>
+                <p> <a href="#">Press Room</a></p>
+    
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="quicktech-footer-main">
+                    <h4>INFO</h4>
+                <p><a href="#">Track my order</a></p>
+                <p><a href="#"> FAQ</a></p>
+                <p><a href="#">Terms &amp Conditions</a></p>
+                <p><a href="#">Terms &amp Conditions Summer Sale</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Cookie Statement</a></p>
+                <p><a href="#"> Website terms of use</a></p>
+                <p><a href="#">Brand Protection</a></p>
+                <p><a href="#">Sitemap</a></p>
+                <p> <a href="#"> Complaints</a></p>
+                <p> <a href="#"> Unidays</a></p>
+                
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="quicktech-footer-main">
+                    <h4>STORE LOCATOR</h4>
+                    <a class="quicktech-store-btn" href="#"><i class="fa-solid fa-location-dot"></i> Find a Store</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="quicktech-socialmedia">
+                    <ul class="quicktech-social">
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="quikctehc-payment-img text-center">
+                    <img src="images/pay.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="quicktech-copyright text-center">
+                    <p>Copyright © 2024 JB-RETAILERS
+                        All rights reserved
+                        Design and Developed By <a href="https://quicktech-ltd.com/">QuickTech IT</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+    </div>
+    <!-- Feedback button -->
+    <!-- <div class="feedback-button">Feedback</div> -->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    
+        function selectSize(element, type) {
+            var options = document.querySelectorAll('#' + type + 'Sizes .size-box');
+            options.forEach(function (el) {
+                el.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+    </script>
+
+    <script>
+        function selectDelivery(type) {
+            document.getElementById('homeDelivery').classList.remove('selected');
+            document.getElementById('storePickup').classList.remove('selected');
+        
+            if (type === 'home') {
+                document.getElementById('homeDelivery').classList.add('selected');
+            } else {
+                document.getElementById('storePickup').classList.add('selected');
+            }
+        }
+        
+        function selectShipping(type) {
+            document.getElementById('dhlStandard').classList.remove('selected');
+            document.getElementById('dhlEvening').classList.remove('selected');
+        
+            if (type === 'standard') {
+                document.getElementById('dhlStandard').classList.add('selected');
+            } else {
+                document.getElementById('dhlEvening').classList.add('selected');
+            }
+        }
+    
+    </script>
+
+    <script>
+        // Handle sidebar toggle for smaller screens
+        document.getElementById('sidebarToggle').addEventListener('click', function () {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('collapsed');
+        });
+
+        // Collapse sidebar by default on smaller screens
+        function handleResize() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+            if (window.innerWidth < 992) { // Bootstrap's breakpoint for large devices
+                sidebar.classList.add('collapsed');
+                mainContent.classList.add('collapsed');
+            } else {
+                sidebar.classList.remove('collapsed');
+                mainContent.classList.remove('collapsed');
+            }
+        }
+
+        // Run on load
+        window.addEventListener('load', handleResize);
+
+        // Run on window resize
+        window.addEventListener('resize', handleResize);
+    </script>
+</body>
+</html>

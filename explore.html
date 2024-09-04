@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JB-RETAILERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <nav id="quicketch-navbar">
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-1">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <button class="btn btn-light me-2" id="sidebarToggle">☰</button>
+                      </button>
+                      <!-- <div class="collapse navbar-collapse" id="navbarNav">
+                         
+                          </div> -->
+                     
+              </div>
+              <div class="col-lg-3">
+                  <div class="quikcetch-categories">
+                      <ul class="quicktech-categories">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="categories.html">MEN</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="categories.html">WOMEN</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-lg-2">
+                  <div class="quicktech-logo d-flex">
+                      <a class="navbar-brand mx-auto" href="index.html">
+                          <span class="navbar-logo">JB-RETAILERS</span>
+                      </a>
+                    
+                    
+                  </div>
+              </div>
+              <div class="col-lg-2">
+                  <form class="quicktech-logos" role="search">
+                      <input class="form-control inn me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="quicktech-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+              </div>
+              <div class="col-lg-4">
+                  <div class="quicktech-nav-right">
+                      <ul class="navbar-brand quicktech-side-right">
+                          <div class="dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <img class="quicktech-language" src="https://www.g-star.com/_fes/20240809162459302/img/flags@2x/nl.png" alt="flag"> en
+                              </a>
+                              <ul style="left: 29px;" class="dropdown-menu" aria-labelledby="languageDropdown">
+                                  <li class="px-3 py-2">
+                                      <h5>Choose your shipping destination and language</h5>
+                                      <form>
+                                          <div class="mb-3">
+                                              <label for="countrySelect" class="form-label">Country</label>
+                                              <select class="form-select" id="countrySelect">
+                                                  <option selected>Netherlands</option>
+                                                  <option value="1">Germany</option>
+                                                  <option value="2">France</option>
+                                                  <option value="3">United Kingdom</option>
+                                                  <!-- Add more countries as needed -->
+                                              </select>
+                                          </div>
+                                          <div class="mb-3">
+                                              <label for="languageSelect" class="form-label">Language</label>
+                                              <select class="form-select" id="languageSelect">
+                                                  <option selected>English</option>
+                                                  <option value="1">Dutch</option>
+                                                  <option value="2">German</option>
+                                                  <option value="3">French</option>
+                                                  <!-- Add more languages as needed -->
+                                              </select>
+                                          </div>
+                                          <button type="submit" class="btn btn-dark">Continue</button>
+                                      </form>
+                                      <p class="mt-3 text-muted">Your bag will be emptied when you change your country settings</p>
+                                  </li>
+                              </ul>
+                          </div>
+                          <li>
+                              <a class="nav-link" href="login.html"><i style="font-size: 15px;" class="fa-regular fa-user"></i> login</a>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                          </li>
+                          <li>
+                              <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+  
+
+    <!-- Sidebar -->
+    <nav class="sidebar d-none d-lg-block" id="sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a style="color: tomato;" class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#sale" role="button" aria-expanded="false" aria-controls="sale">
+                    Sale
+                    <i class="bi bi-plus-circle" id="sale-icon"></i>
+                </a>
+                <ul class="collapse list-unstyled quicktech-sidebarr" id="sale">
+                    <li><a class="nav-link" href="#">Item 1</a></li>
+                    <li><a class="nav-link" href="#">Item 2</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#men" role="button" aria-expanded="false" aria-controls="men">
+                    Men
+                    <i class="bi bi-plus-circle" id="men-icon"></i>
+                </a>
+                <ul class="collapse list-unstyled quicktech-sidebarr" id="men">
+                    <li><a class="nav-link" href="#">Item 1</a></li>
+                    <li><a class="nav-link" href="#">Item 2</a></li>
+                </ul>
+            </li>
+            <!-- Other items... -->
+        </ul>
+    </nav>
+    
+<!-- mobile-navigationbar -->
+<nav class="navbar navbar-expand-lg bg-light quikctech-nn">
+    <div class="container">
+        <div style="width: 100%;" class="row">
+            <div class="col-3 col-sm-2">
+             <div class="quicktech-s-flex d-flex">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i style="color: white;" class="fa-solid fa-bars"></i>
+                  </button>
+                  <div class="search-container text-center">
+                    <!-- Magnifying glass icon that toggles collapse -->
+                    <a class="quikctech-search-icon" data-bs-toggle="collapse" href="#searchInput" role="button" aria-expanded="false" aria-controls="searchInput">
+                      <i style="color: white; padding-top:12px;" class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                
+                  
+             </div>
+            </div>
+            
+            </div>
+            <div style="padding-top: 5px;" class="col-6 text-end">
+              <a href="index.html">  <span style="color: white; padding-top:5px;" class="navbar-logos">JB-RETAILERS</span></a>
+            </div>
+            <div style="padding-top: 5px;" class="col-3">
+                <div class="quicktech-right-mob text-end">
+                    <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+          <!-- Collapsible input field -->
+          <div class="collapse mt-2 quicktech-search" id="searchInput">
+            <input type="text" class="form-control" placeholder="Search...">
+            <div class="quicktech-search-btnnn">
+                <i style="color: black;" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        
+       
+    
+     
+    </div>
+  </nav>
+
+  <!--mobile sidebar -->
+ <div class="quikctech-mobile-sidebar">
+      <div class="offcanvas offcanvas-start quic" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <a href="index.html"><span style="color: black; padding-top:5px;" class="navbar-logos">JB-RETAILERS</span></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a style="color: tomato;" class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#salee" role="button" aria-expanded="false" aria-controls="salee">
+                        Sale
+                        <i class="bi bi-plus-circle" id="sale-iconn"></i>
+                    </a>
+                    <ul class="collapse list-unstyled quicktech-sidebarr" id="salee">
+                        <li><a class="nav-link" href="#">Item 1</a></li>
+                        <li><a class="nav-link" href="#">Item 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#menn" role="button" aria-expanded="false" aria-controls="menn">
+                        Men
+                        <i class="bi bi-plus-circle" id="men-iconn"></i>
+                    </a>
+                    <ul class="collapse list-unstyled quicktech-sidebarr" id="menn">
+                        <li><a class="nav-link" href="#">Item 1</a></li>
+                        <li><a class="nav-link" href="#">Item 2</a></li>
+                    </ul>
+                </li>
+                <!-- Other items... -->
+            </ul>
+        </div>
+      </div>
+ </div>
+<!-- sidebar -->
+<!-- mobile-navigation bar -->
+
+    <!-- Main content -->
+    <div class="main-content" id="mainContent">
+<!-- all explore -->
+<section id="quicktech-latestnews">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <div class="quicktech-latestnews-head text-center">
+                    <h3>All News</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row gapp mt-3">
+            <div class="col-lg-4 col-6 col-sm-6">
+             <a href="exploredetails.html">
+                <div class="quicktech-latestnews-main">
+                    <img src="images/latest-news.webp" class="w-100" alt="">
+                    <div class="quicktech-news-pos">
+                        <h4>FASHION</h4>
+                    </div>
+                    <div class="quicktech-news-date">
+                        <p>JUL
+                            <br>
+                           <span>2024</span>
+                        </p>
+                      
+                    </div>
+                  </div>
+                  <div class="quikctech-news-content text-center">
+                    <h4>White Denim Simmer</h4>
+                    <p>Rediscover a Minimalist staple</p>
+                    <a href="exploredetails.html">Explore</a>
+                  </div>
+             </a>
+            </div>
+            <div class="col-lg-4 col-6 col-sm-6">
+                <a href="exploredetails.html">
+                   <div class="quicktech-latestnews-main">
+                       <img src="images/latest-news.webp" class="w-100" alt="">
+                       <div class="quicktech-news-pos">
+                           <h4>FASHION</h4>
+                       </div>
+                       <div class="quicktech-news-date">
+                           <p>JUL
+                               <br>
+                              <span>2024</span>
+                           </p>
+                         
+                       </div>
+                     </div>
+                     <div class="quikctech-news-content text-center">
+                       <h4>White Denim Simmer</h4>
+                       <p>Rediscover a Minimalist staple</p>
+                       <a href="exploredetails.html">Explore</a>
+                     </div>
+                </a>
+               </div>
+               <div class="col-lg-4 col-6 col-sm-6">
+                <a href="exploredetails.html">
+                   <div class="quicktech-latestnews-main">
+                       <img src="images/latest-news.webp" class="w-100" alt="">
+                       <div class="quicktech-news-pos">
+                           <h4>FASHION</h4>
+                       </div>
+                       <div class="quicktech-news-date">
+                           <p>JUL
+                               <br>
+                              <span>2024</span>
+                           </p>
+                         
+                       </div>
+                     </div>
+                     <div class="quikctech-news-content text-center">
+                       <h4>White Denim Simmer</h4>
+                       <p>Rediscover a Minimalist staple</p>
+                       <a href="exploredetails.html">Explore</a>
+                     </div>
+                </a>
+               </div>
+               <div class="col-lg-4 col-6 col-sm-6">
+                <a href="exploredetails.html">
+                   <div class="quicktech-latestnews-main">
+                       <img src="images/latest-news.webp" class="w-100" alt="">
+                       <div class="quicktech-news-pos">
+                           <h4>FASHION</h4>
+                       </div>
+                       <div class="quicktech-news-date">
+                           <p>JUL
+                               <br>
+                              <span>2024</span>
+                           </p>
+                         
+                       </div>
+                     </div>
+                     <div class="quikctech-news-content text-center">
+                       <h4>White Denim Simmer</h4>
+                       <p>Rediscover a Minimalist staple</p>
+                       <a href="exploredetails.html">Explore</a>
+                     </div>
+                </a>
+               </div>
+        </div>
+    </div>
+</section>
+ <!-- all explore -->
+<!-- voucher -->
+<section id="quicktech-voucher">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 m-auto">
+                <div class="newsletter-container text-center">
+                    <h1>Join us and receive a voucher code</h1>
+                    <p> <span class="sale">15% off on your first purchase (SALE items excluded)</span> for all new JB-RETAILERS newsletter subscribers</p>
+                    
+                    <div class="quicktech-pref d-flex justify-content-center align-items-center mb-3">
+                        <span style="margin-top: -12px;" class="me-3 q-p">Preferences</span>
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="fashionPreference" id="mensFashion">
+                            <label class="form-check-label" for="mensFashion">
+                                Men's fashion
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="fashionPreference" id="womensFashion" checked>
+                            <label class="form-check-label" for="womensFashion">
+                                Women's fashion
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group quicktech-input-flex mb-3">
+                        <input class="quicktech-input-subs" type="email"  placeholder="Enter your e-mail address">
+                        <button class=" quicktech-subs-btn" type="button">subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- voucher -->
+
+<!-- app -->
+<section id="quicktech-app">
+ <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="quicktec-app-main text-center">
+              <h6>INTRODUCING THE OFFICIAL JB-RETAILERS APP® </h6>
+              <p>Get early access to all sales, exclusive content and see new collections before anyone else. </p>
+              <a class="quicktech-findout" href="#">Find out more</a>
+              <ul class="quicktech-playstore-flex">
+                <li><a href="#"><img src="images/apple.avif" alt=""></a></li>
+                <li><a href="#"><img src="images/google_playstore.avif" alt=""></a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
+
+<!-- app -->
+
+<!-- footer -->
+<footer id="quicktech-footer">
+<div class="container">
+    <div class="row gapp">
+        <div class="col-lg-4 col-6">
+            <div class="quicktech-footer-main">
+                <h4>JB-RETAILERS</h4>
+            <p><a href="#">About JB-RETAILERS</a></p>
+            <p><a href="#">Jeans Fit Guide</a></p>
+            <p><a href="#">Careers</a></p>
+            <p><a href="#">Corporate Responsibility</a></p>
+            <p><a href="#">GSRD Foundation</a></p>
+            <p><a href="#">JB-RETAILERS Rewear</a></p>
+            <p><a href="#">Certified Tailors</a></p>
+            <p><a href="#">Club-G</a></p>
+            <p><a href="#">Newsletter</a></p>
+            <p> <a href="#">Gift Cards</a></p>
+            <p> <a href="#">Press Room</a></p>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-6">
+            <div class="quicktech-footer-main">
+                <h4>INFO</h4>
+            <p><a href="#">Track my order</a></p>
+            <p><a href="#"> FAQ</a></p>
+            <p><a href="#">Terms &amp Conditions</a></p>
+            <p><a href="#">Terms &amp Conditions Summer Sale</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Cookie Statement</a></p>
+            <p><a href="#"> Website terms of use</a></p>
+            <p><a href="#">Brand Protection</a></p>
+            <p><a href="#">Sitemap</a></p>
+            <p> <a href="#"> Complaints</a></p>
+            <p> <a href="#"> Unidays</a></p>
+            
+            </div>
+        </div>
+        <div class="col-lg-4 col-6">
+            <div class="quicktech-footer-main">
+                <h4>STORE LOCATOR</h4>
+                <a class="quicktech-store-btn" href="#"><i class="fa-solid fa-location-dot"></i> Find a Store</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="quicktech-socialmedia">
+                <ul class="quicktech-social">
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="quikctehc-payment-img text-center">
+                <img src="images/pay.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-12">
+            <div class="quicktech-copyright text-center">
+                <p>Copyright © 2024 JB-RETAILERS
+                    All rights reserved
+                    Design and Developed By <a href="https://quicktech-ltd.com/">QuickTech IT</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- footer -->
+
+
+
+
+
+
+    </div>
+    <!-- Feedback button -->
+    <!-- <div class="feedback-button">Feedback</div> -->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/venobox.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+        }
+    
+        function selectSize(element, type) {
+            var options = document.querySelectorAll('#' + type + 'Sizes .size-box');
+            options.forEach(function (el) {
+                el.classList.remove('active');
+            });
+            element.classList.add('active');
+        }
+    </script>
+
+    <script>
+        function selectDelivery(type) {
+            document.getElementById('homeDelivery').classList.remove('selected');
+            document.getElementById('storePickup').classList.remove('selected');
+        
+            if (type === 'home') {
+                document.getElementById('homeDelivery').classList.add('selected');
+            } else {
+                document.getElementById('storePickup').classList.add('selected');
+            }
+        }
+        
+        function selectShipping(type) {
+            document.getElementById('dhlStandard').classList.remove('selected');
+            document.getElementById('dhlEvening').classList.remove('selected');
+        
+            if (type === 'standard') {
+                document.getElementById('dhlStandard').classList.add('selected');
+            } else {
+                document.getElementById('dhlEvening').classList.add('selected');
+            }
+        }
+    
+    </script>
+
+    <script>
+        // Handle sidebar toggle for smaller screens
+        document.getElementById('sidebarToggle').addEventListener('click', function () {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('collapsed');
+        });
+
+        // Collapse sidebar by default on smaller screens
+        function handleResize() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+            if (window.innerWidth < 992) { // Bootstrap's breakpoint for large devices
+                sidebar.classList.add('collapsed');
+                mainContent.classList.add('collapsed');
+            } else {
+                sidebar.classList.remove('collapsed');
+                mainContent.classList.remove('collapsed');
+            }
+        }
+
+        // Run on load
+        window.addEventListener('load', handleResize);
+
+        // Run on window resize
+        window.addEventListener('resize', handleResize);
+    </script>
+</body>
+</html>

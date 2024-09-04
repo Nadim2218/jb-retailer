@@ -1,0 +1,1248 @@
+@media (max-width: 575.98px) {
+    #quicketch-navbar{
+        display: none;
+    }
+    #quicktech-dd{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-content {
+        margin-left: 250px;
+        padding: 0;
+        transition: margin-left 0.3s ease;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .quikctech-nn{
+        display: block;
+        background-color: #303030 !important;
+        position: fixed;
+        width: 100%;
+        z-index: 1040;
+        height: 55px;
+    }
+    .quikctech-mobile-sidebar{
+        display: block;
+    }
+    .quicktech-new-img {
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
+    .quikctech-new-btn a {
+        margin-left: 4px;
+        padding: 7px 8px;
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        border: 2px solid transparent;
+    }
+    .quicktech-new-img h4 {
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    .quicktech-col-img-arrival {
+        width: 48%;
+        position: relative;
+        overflow: hidden;
+    }
+    .quicktech-imggg {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .quicktech-col-img-arrival img {
+        width: 100%;
+        /* transition: 0.1s ease-in-out; */
+        height: 160px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .quicktech-saleban-text {
+        position: absolute;
+        top: 50%;
+        left: 21px;
+        transform: translateY(-50%);
+    }
+    .quicktech-saleban-text h3 {
+        font-size: 29px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-saleban-text h1 {
+        font-size: 60px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-saleban-text h4 {
+        font-size: 23px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quikctech-jeansban-img {
+        position: relative;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .quikctech-jeansban-main{
+        display: block !important;
+    }
+    .quicktech-salebann-text {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quikctech-sale-new-btn a {
+        padding: 8px 6px;
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        transition: 0.4s;
+        border: 2px solid transparent;
+    }
+    .quicktech-salebann-text h3 {
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .quikctech-summerban-img img {
+        height: 290px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    .quicktech-salebann-text h3 {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding-bottom: 10px;
+        text-align: center;
+        color: white !important;
+    }
+    .quikctech-jeansban-img img {
+        height: 280px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    .quikctech-secondhand-img img {
+        height: 280px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    /* .quikctech-sale-new-btn {
+        display: inline-grid;
+        row-gap: 10px;
+    } */
+    .quicktech-secondhand-text {
+        position: absolute;
+        bottom: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quicktech-latestnews-main img {
+        height: 160px;
+    }
+    .quicktech-news-date span {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+    }
+    .quicktech-news-date p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+    }
+    .quicktech-news-date {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        background-color: black;
+        padding: 0px 8px;
+        text-align: center;
+        height: 39px;
+    }
+    .quicktech-news-pos h4 {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    .quikctech-news-content h4 {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding-top: 10px;
+    }
+    .quikctech-news-content p {
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(0, 0, 0, 0.509);
+    }
+    .quikctech-news-content a {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+    .quicktech-latest-soc-btn a {
+        padding: 5px 15px;
+        background-color: black;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        border: 2px solid black;
+        transition: 0.4s;
+        font-size: 15px;
+    }
+    .quicktech-may-head h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+    .quicktech-latestnews-head h3 {
+        font-size: 26px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #quicktech-socialmedia {
+        height: 518px;
+        overflow: hidden;
+    }
+    .newsletter-container p {
+        color: rgba(0, 0, 0, 0.541);
+        font-size: 13px;
+    }
+    .quicktech-pref{
+        display: inline-grid !important;
+    }
+    .q-p{
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-input-flex {
+        justify-content: center;
+        display: inline-grid;
+        width: 100%;
+        row-gap: 10px;
+    }
+    .quicktech-input-flex input{
+        width: 100%;
+    }
+    .quicktech-subs-btn {
+        background-color: black;
+        color: white;
+        margin-left: 0 !important;
+        padding: 10px 20px;
+        border: none;
+    }
+    #quicktech-voucher {
+        padding: 40px 0;
+        background-color: #f7f7f7;
+    }
+    .quikctehc-payment-img img {
+        width: 100%;
+    }
+    .nav-link{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+
+    /* wishlist */
+    .quikctech-product-imggg img {
+        height: 180px;
+    }
+    /* wishlist */
+    /* social */
+    #quicktech-social-main{
+        padding-top: 40px;
+    }
+    .quicktech-sociall-img img {
+        height: 220px;
+    }
+    .carousel-item img {
+        height: 400px;
+    }
+    /* social */
+
+    /* register */
+    .quicktech-my-acc {
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        margin-top: 50px;
+    }
+    /* register */
+    /* login */
+    #quicktech-login{
+        padding-top: 40px;
+    }
+    /* login */
+
+    /* explore details */
+    #quicktech-exploredetails{
+        padding-top: 40px;
+    }
+    .quicktech-expdt-img img {
+        height: 300px;
+    }
+    .quicktech-slider-details {
+        padding: 20px 20px;
+    }
+    /* explore details */
+    /* checkout */
+     .quicktech-none{
+        display: none;
+     }
+     .checkout-header {
+        display: block;
+        /* justify-content: space-between; */
+        align-items: center;
+        padding: 0;
+    }
+    /* .step {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        text-align: left;
+    } */
+    /* .quicktech-step-line::before {
+        position: absolute;
+        content: "";
+        top: 16px;
+        right: 13px;
+        width: 77px;
+        height: 1px;
+        background-color: black;
+    } */
+    /* .quicktech-step-line::after {
+        position: absolute;
+        content: "";
+        top: 16px;
+        left: -86px;
+        width: 77px;
+        height: 1px;
+        background-color: black;
+    }
+    .checkout-steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 405px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    } */
+    .checkout-logo{
+        text-align: center;
+    }
+    
+    /* checkout */
+    .checkout-steps {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .quicktech-step-line::before {
+        position: absolute;
+        content: "";
+        top: 16px;
+        right: -42px;
+        width: 78px;
+        height: 1px;
+        background-color: black;
+    }
+    .quicktech-step-line::after {
+        position: absolute;
+        content: "";
+        top: 16px;
+        left: -35px;
+        width: 77px;
+        height: 1px;
+        background-color: black;
+    }
+    .secure-checkout {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-top: 23px;
+        text-align: center;
+    }
+
+    /* categories */
+#quicktech-newarrival{
+    /* padding-top: 100px; */
+    background-color: #f7f7f7;
+}
+#quikctech-categories {
+	background-color: #f7f7f7;
+	border-bottom: 2px solid #dcdcdc;
+	position: unset;
+	top: 104px;
+	z-index: 99;
+}
+.dropdown button {
+	background-color: transparent;
+	border: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+}
+.quikctech-product-imgs img {
+	height: 182px;
+}
+.nav-tabs{
+    column-gap: 18px !important;
+}
+    /* categories */
+    /* cart */
+    .quicktech-cart-head {
+        display: block;
+    }
+    #quikctech-d-info{
+        padding-top: 68px;
+    }
+    .quicktech-cart-product img {
+        width: 60px;
+        height: 60px;
+    }
+    .quicktech-cart-product-info h5 {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-cart-product-info p {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(0, 0, 0, 0.518);
+    }
+    .quicktech-cart-product-info label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    #quantity{
+        font-size: 11px;
+    }
+    .quicktech-close{
+        font-size: 10px;
+    }
+    .cart-price span {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .quicktech-alert p {
+        font-size: 11px;
+        font-family: 'Roboto', sans-serif;
+        padding: 8px 20px;
+        background-color: #e1edf1;
+    }
+    .quicktech-subtotal h5 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+    }
+    /* cart */
+    /* product details */
+    .main-image {
+        max-width: 100%;
+        height: 270px;
+    }
+    .thumb-img {
+        width: 50px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+    .thumbs {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+    }
+    /* product details */
+    #quicktech-newarrivall {
+        width: 100%;
+        /* height: 350px; */
+        padding: 20px 0;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 766.98px) {
+    #quicketch-navbar{
+        display: none;
+    }
+    #quicktech-dd{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-content {
+        margin-left: 250px;
+        padding: 0;
+        transition: margin-left 0.3s ease;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .quikctech-nn{
+        display: block;
+        background-color: #303030 !important;
+        position: fixed;
+        width: 100%;
+        z-index: 1040;
+        height: 55px;
+    }
+    .quikctech-mobile-sidebar{
+        display: block;
+    }
+    .quicktech-new-img {
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
+    .quikctech-new-btn a {
+        margin-left: 4px;
+        padding: 7px 8px;
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        border: 2px solid transparent;
+    }
+    .quicktech-new-img h4 {
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    .quicktech-col-img-arrival {
+        width: 48%;
+        position: relative;
+        overflow: hidden;
+    }
+    .quicktech-imggg {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .quicktech-col-img-arrival img {
+        width: 100%;
+        /* transition: 0.1s ease-in-out; */
+        height: 160px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .quicktech-saleban-text {
+        position: absolute;
+        top: 50%;
+        left: 21px;
+        transform: translateY(-50%);
+    }
+    .quicktech-saleban-text h3 {
+        font-size: 29px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-saleban-text h1 {
+        font-size: 60px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-saleban-text h4 {
+        font-size: 23px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quikctech-jeansban-img {
+        position: relative;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .quikctech-jeansban-main{
+        display: block !important;
+    }
+    .quicktech-salebann-text {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quikctech-sale-new-btn a {
+        padding: 8px 6px;
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        transition: 0.4s;
+        border: 2px solid transparent;
+    }
+    .quicktech-salebann-text h3 {
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .quikctech-summerban-img img {
+        height: 290px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    .quicktech-salebann-text h3 {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding-bottom: 10px;
+        text-align: center;
+        color: white !important;
+    }
+    .quikctech-jeansban-img img {
+        height: 280px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    .quikctech-secondhand-img img {
+        height: 280px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    /* .quikctech-sale-new-btn {
+        display: inline-grid;
+        row-gap: 10px;
+    } */
+    .quicktech-secondhand-text {
+        position: absolute;
+        bottom: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quicktech-latestnews-main img {
+        height: 160px;
+    }
+    .quicktech-news-date span {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+    }
+    .quicktech-news-date p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 11px;
+    }
+    .quicktech-news-date {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        background-color: black;
+        padding: 0px 8px;
+        text-align: center;
+        height: 39px;
+    }
+    .quicktech-news-pos h4 {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    .quikctech-news-content h4 {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding-top: 10px;
+    }
+    .quikctech-news-content p {
+        font-size: 11px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(0, 0, 0, 0.509);
+    }
+    .quikctech-news-content a {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+    .quicktech-latest-soc-btn a {
+        padding: 5px 15px;
+        background-color: black;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        border: 2px solid black;
+        transition: 0.4s;
+        font-size: 15px;
+    }
+    .quicktech-may-head h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+    .quicktech-latestnews-head h3 {
+        font-size: 26px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #quicktech-socialmedia {
+        height: 518px;
+        overflow: hidden;
+    }
+    .newsletter-container p {
+        color: rgba(0, 0, 0, 0.541);
+        font-size: 13px;
+    }
+    .quicktech-pref{
+        display: inline-grid !important;
+    }
+    .q-p{
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-input-flex {
+        justify-content: center;
+        display: inline-grid;
+        width: 100%;
+        row-gap: 10px;
+    }
+    .quicktech-input-flex input{
+        width: 100%;
+    }
+    .quicktech-subs-btn {
+        background-color: black;
+        color: white;
+        margin-left: 0 !important;
+        padding: 10px 20px;
+        border: none;
+    }
+    #quicktech-voucher {
+        padding: 40px 0;
+        background-color: #f7f7f7;
+    }
+    .quikctehc-payment-img img {
+        width: 100%;
+    }
+    .nav-link{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+     /* wishlist */
+     .quikctech-product-imggg img {
+        height: 250px;
+    }
+    /* wishlist */
+
+     /* social */
+     #quicktech-social-main{
+        padding-top: 40px;
+    }
+    .quicktech-sociall-img img {
+        height: 220px;
+    }
+    .carousel-item img {
+        height: 400px;
+    }
+    /* social */
+
+     /* register */
+     .quicktech-my-acc {
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        margin-top: 50px;
+    }
+    /* register */
+     /* login */
+     #quicktech-login{
+        padding-top: 40px;
+    }
+    /* login */
+
+      /* explore details */
+      #quicktech-exploredetails{
+        padding-top: 40px;
+    }
+    .quicktech-expdt-img img {
+        height: 300px;
+    }
+    .quicktech-slider-details {
+        padding: 20px 20px;
+    }
+    /* explore details */
+     /* checkout */
+     .quicktech-none{
+        display: none;
+     }
+     .checkout-header {
+        display: block;
+        /* justify-content: space-between; */
+        align-items: center;
+        padding: 0;
+    }
+    /* .step {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        text-align: left;
+    } */
+    /* .quicktech-step-line::before {
+        position: absolute;
+        content: "";
+        top: 16px;
+        right: 13px;
+        width: 77px;
+        height: 1px;
+        background-color: black;
+    } */
+    /* .quicktech-step-line::after {
+        position: absolute;
+        content: "";
+        top: 16px;
+        left: -86px;
+        width: 77px;
+        height: 1px;
+        background-color: black;
+    }
+    .checkout-steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 405px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    } */
+    .checkout-logo{
+        text-align: center;
+    }
+    
+    /* checkout */
+    .checkout-steps {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .quicktech-step-line::before {
+        position: absolute;
+        content: "";
+        top: 16px;
+        right: -42px;
+        width: 78px;
+        height: 1px;
+        background-color: black;
+    }
+    .quicktech-step-line::after {
+        position: absolute;
+        content: "";
+        top: 16px;
+        left: -35px;
+        width: 77px;
+        height: 1px;
+        background-color: black;
+    }
+    .secure-checkout {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-top: 23px;
+        text-align: center;
+    }
+    /* checkout */
+
+       /* categories */
+#quicktech-newarrival{
+    /* padding-top: 100px; */
+    background-color: #f7f7f7;
+}
+#quikctech-categories {
+	background-color: #f7f7f7;
+	border-bottom: 2px solid #dcdcdc;
+	position: unset;
+	top: 104px;
+	z-index: 99;
+}
+.dropdown button {
+	background-color: transparent;
+	border: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+}
+/* .quikctech-product-imgs img {
+	height: 182px;
+} */
+.nav-tabs{
+    column-gap: 18px !important;
+}
+    /* categories */
+
+     /* product details */
+     .main-image {
+        max-width: 100%;
+        height: 310px;
+    }
+    .thumb-img {
+        width: 50px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+    .thumbs {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+    }
+    /* product details */
+    #quicktech-newarrivall {
+        width: 100%;
+        /* height: 350px; */
+        padding: 20px 0;
+        padding-top: 100px;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 991.98px) {
+    #quicktech-newarrivall {
+        width: 100%;
+        /* height: 350px; */
+        padding: 20px 0;
+        padding-top: 100px;
+    }
+    #quicketch-navbar{
+        display: none;
+    }
+    #quicktech-dd{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-content {
+        margin-left: 250px;
+        padding: 0;
+        transition: margin-left 0.3s ease;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .quikctech-nn{
+        display: block;
+        background-color: #303030 !important;
+        position: fixed;
+        width: 100%;
+        z-index: 1040;
+        height: 55px;
+    }
+    .quikctech-mobile-sidebar{
+        display: block;
+    }
+    .quicktech-new-img {
+        width: 100%;
+        height: 350px;
+        position: relative;
+    }
+    .quikctech-new-btn a {
+        margin-left: 4px;
+        padding: 7px 8px;
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        border: 2px solid transparent;
+    }
+    .quicktech-new-img h4 {
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    .quicktech-sale-img img {
+        height: 400px;
+    }
+    .quicktech-col-img-arrival {
+        width: 23%;
+        position: relative;
+        overflow: hidden;
+    }
+    .quicktech-imggg {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .quicktech-col-img-arrival img {
+        width: 100%;
+        /* transition: 0.1s ease-in-out; */
+        height: 160px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .quicktech-saleban-text {
+        position: absolute;
+        top: 50%;
+        left: 21px;
+        transform: translateY(-50%);
+    }
+    .quicktech-saleban-text h3 {
+        font-size: 29px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-saleban-text h1 {
+        font-size: 60px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-saleban-text h4 {
+        font-size: 23px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quikctech-jeansban-img {
+        position: relative;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    /* .quikctech-jeansban-main{
+        display: block !important;
+    } */
+    .quicktech-salebann-text {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quikctech-sale-new-btn a {
+        padding: 8px 6px;
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        transition: 0.4s;
+        border: 2px solid transparent;
+    }
+    .quicktech-salebann-text h3 {
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .quikctech-summerban-img img {
+        height: 290px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    .quicktech-salebann-text h3 {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        padding-bottom: 10px;
+        text-align: center;
+        color: white !important;
+    }
+    .quikctech-jeansban-img img {
+        height: 350px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    .quikctech-secondhand-img img {
+        height: 280px;
+        width: 100%;
+        filter: brightness(80%);
+    }
+    /* .quikctech-sale-new-btn {
+        display: inline-grid;
+        row-gap: 10px;
+    } */
+    .quicktech-secondhand-text {
+        position: absolute;
+        bottom: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .quicktech-latestnews-main img {
+        height: 220px;
+    }
+    .quicktech-news-date span {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+    .quicktech-news-date p {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+    }
+    .quicktech-news-date {
+        position: absolute;
+        top: 0;
+        left: 6px;
+        background-color: black;
+        padding: 0px 8px;
+        text-align: center;
+        height: 45px;
+    }
+    .quicktech-news-pos h4 {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+    .quikctech-news-content h4 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding-top: 10px;
+    }
+    .quikctech-news-content p {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(0, 0, 0, 0.509);
+    }
+    .quikctech-news-content a {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+    .quicktech-latest-soc-btn a {
+        padding: 5px 15px;
+        background-color: black;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        border: 2px solid black;
+        transition: 0.4s;
+        font-size: 15px;
+    }
+    .quicktech-may-head h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+    }
+    .quicktech-latestnews-head h3 {
+        font-size: 26px;
+        font-family: 'Roboto', sans-serif;
+    }
+    #quicktech-socialmedia {
+        height: 518px;
+        overflow: hidden;
+    }
+    .newsletter-container p {
+        color: rgba(0, 0, 0, 0.541);
+        font-size: 13px;
+    }
+    .quicktech-pref{
+        display: inline-grid !important;
+    }
+    .q-p{
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .quicktech-input-flex {
+        justify-content: center;
+        display: inline-grid;
+        width: 100%;
+        row-gap: 10px;
+    }
+    .quicktech-input-flex input{
+        width: 100%;
+    }
+    .quicktech-subs-btn {
+        background-color: black;
+        color: white;
+        margin-left: 0 !important;
+        padding: 10px 20px;
+        border: none;
+    }
+    #quicktech-voucher {
+        padding: 40px 0;
+        background-color: #f7f7f7;
+    }
+    .quikctehc-payment-img img {
+        width: 100%;
+    }
+    .quicktech-social-img img {
+        height: 280px;
+        transition: 0.4s;
+    }
+    .nav-link{
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+     /* social */
+     #quicktech-social-main{
+        padding-top: 40px;
+    }
+    /* social */
+     /* register */
+     .quicktech-my-acc {
+        font-family: 'Roboto', sans-serif;
+        font-size: 39px;
+        margin-top: 50px;
+    }
+    /* register */
+     /* login */
+     #quicktech-login{
+        padding-top: 40px;
+    }
+    /* login */
+      /* explore details */
+      #quicktech-exploredetails{
+        padding-top: 40px;
+    }
+    .quicktech-expdt-img img {
+        height: 400px;
+    }
+    .quicktech-slider-details {
+        padding: 20px 20px;
+    }
+    /* explore details */
+
+    /* checkout */
+    .checkout-steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+       /* categories */
+#quicktech-newarrival{
+    /* padding-top: 100px; */
+    background-color: #f7f7f7;
+}
+#quikctech-categories {
+	background-color: #f7f7f7;
+	border-bottom: 2px solid #dcdcdc;
+	position: unset;
+	top: 104px;
+	z-index: 99;
+}
+/* .dropdown button {
+	background-color: transparent;
+	border: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+} */
+
+.nav-tabs{
+    column-gap: 18px !important;
+}
+    /* categories */
+    .product-title {
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 20px;
+    }
+    .main-image {
+        max-width: 100%;
+        height: 370px;
+    }
+}
